@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { useSelector , useDispatch } from 'react-redux';
+import { Home, Login, Public } from './containers/public/index';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Routes, Route} from 'react-router-dom';
+import path from './ultis/path';
+
 
 function App() {
   const { test } = useSelector(state => state.app)
@@ -9,6 +13,12 @@ function App() {
   return (
     <>
     <div className="App">
+        <Routes>
+            <Route path= {path.PUBLIC} element = {<Public/>} >         {/* có dấu sao nhập gì vào link cũng ra trang này*/ }
+                <Route path= {path.HOME} element = {<Home/>} />
+                <Route path= {path.LOGIN} element = {<Login/>} />
+            </Route>
+        </Routes>
     </div>
 
       <ToastContainer
