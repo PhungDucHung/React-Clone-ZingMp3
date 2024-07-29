@@ -17,6 +17,8 @@ function App() {
             <Route path= {path.PUBLIC} element = {<Public/>} >         {/* có dấu sao nhập gì vào link cũng ra trang này*/ }
                 <Route path= {path.HOME} element = {<Home/>} />
                 <Route path= {path.LOGIN} element = {<Login/>} />
+                <Route path= {path.START} element = {<Home/>} />
+
             </Route>
         </Routes>
     </div>
