@@ -8,7 +8,7 @@ const activeStyle = 'py-2 px-[25px] font-bold text-[#0F7070] text-[13px] flex ga
 
 const SidebarLeft = () => {
   return (
-    <div>
+    <div className='flex flex-col bg-[#DDE4E4]'>
       <div className='w-full h-[70px] py-[15px] px-[25px] flex justify-start items-center'>
         <img src={logo} alt='logo' className='w-[120px] h-10'></img> 
         {/*10 là một giá trị trong hệ thống lưới của Tailwind CSS, tương ứng với 2.5rem (hoặc 40px). */}
