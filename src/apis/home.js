@@ -1,14 +1,13 @@
-import axios from "../axios";
+import axios from '../axios'
 
-
-export const getHome = () => new Promise(async(resolve, reject) => {
-    try{
+export const getHome = () => new Promise(async (resolve, reject) => {
+    try {
         const response = await axios({
             url: '/home',
             method: 'get'
         })
         resolve(response)
-    } catch(error){
+    } catch (error) {
         reject(error)
     }
 })
