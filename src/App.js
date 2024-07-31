@@ -9,7 +9,6 @@ import path from './ultis/path';
 
 function App() {
   const { test } = useSelector(state => state.app)
-  console.log(test);
   return (
     <>
     <div className="App">
